@@ -13,6 +13,6 @@ min_idx = 0
 
 for i in range(5):
     if students[i].score < students[min_idx].score:
-        min_score = students[i].score
+        min_idx = i
 
 print(students[min_idx].name, students[min_idx].score)
