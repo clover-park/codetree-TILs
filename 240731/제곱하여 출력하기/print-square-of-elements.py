@@ -4,4 +4,5 @@ arr = list(map(int, input().split()))
 
 new_arr = [i**2 for i in arr]
 
-print(new_arr[0],new_arr[1],new_arr[2])
+for i in range(count):
+	print(new_arr[i], end=" ")
