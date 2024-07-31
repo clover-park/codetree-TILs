@@ -5,12 +5,11 @@ count = 0
 
 for i in range(1, 1000):
     mul = n*i
-    if mul % 5 == 0:
-        count += 1
-    elif count == 2:
-        break
     arr.append(mul)
 
-
-for i in arr:
-    print(i, end=' ')
+for mul in arr:
+    print(mul, end=' ')
+    if mul % 5 == 0:
+        count += 1
+    if count >= 2:
+        break
