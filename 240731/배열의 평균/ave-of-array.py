@@ -24,7 +24,7 @@ for j in range(4):
 for i in range(2):
     for j in range(4):
         sum_all += arr_2d[i][j]
-        
+
 print(sum_row_1/4, sum_row_2/4)
 print(sum_column_1/2, sum_column_2/2, sum_column_3/2, sum_column_4/2)
-print(sum_all/8)
+print(f'{sum_all/8:.1f}')
