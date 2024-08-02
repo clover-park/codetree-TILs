@@ -7,7 +7,7 @@ class Student:
 n = int(input())
 students = []
 
-for student_id in range(5):
+for _ in range(n):
     name, height, weight = tuple(input().split())
     students.append(Student(name, int(height), int(weight)))
 
