@@ -4,8 +4,6 @@ date, hour, mins = 11, 11, 11
 elapsed_time = 0
 
 while True:
-    if a < 11 and b < 11 and c < 11:
-        print(-1)
     if date == a and hour == b and mins == c:
         break
     elapsed_time += 1
@@ -18,5 +16,8 @@ while True:
     if hour == 24:
         date += 1
         hour = 0
+
+if a < 11 and b < 11 and c < 11:
+    print(-1)
 
 print(elapsed_time)
