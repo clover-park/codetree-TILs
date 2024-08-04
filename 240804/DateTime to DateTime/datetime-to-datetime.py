@@ -7,7 +7,7 @@ if a < 11:
     print(-1)
 
 else:
-    while True:
+    for i in range(10000):
         if date == a and hour == b and mins == c:
             break
         elapsed_time += 1
