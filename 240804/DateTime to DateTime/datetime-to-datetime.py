@@ -3,11 +3,11 @@ a, b, c = tuple(map(int, input().split()))
 date, hour, mins = 11, 11, 11
 elapsed_time = 0
 
-if a < 11:
+if a < 11 or (a <= 11 and b < 11) or (a <= 11 and b <= 11 and c < 11):
     print(-1)
 
 else:
-    for i in range(10000):
+    for i in range(50000):
         if date == a and hour == b and mins == c:
             break
         elapsed_time += 1
